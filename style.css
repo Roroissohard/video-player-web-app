@@ -12,8 +12,8 @@ body, html {
 }
 
 .other-videos {
-  width: 640px;
-  height: 320px;
+  width: 320px;
+  height: 160px;
   background: #e3e6ed;
   border-radius: 18px;
   border: 2px solid #ff5e5e;
@@ -25,8 +25,8 @@ body, html {
 }
 
 .main-video {
-  width: 1280px;
-  height: 720px;
+  width: 640px;
+  height: 320px;
   background: #ff8f84;
   border-radius: 18px;
   border: 2px solid #ff5e5e;
