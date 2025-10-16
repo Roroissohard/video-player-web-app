@@ -14,9 +14,7 @@ body, html {
 .other-videos {
   width: 320px;
   height: 160px;
-  background: #e3e6ed;
   border-radius: 18px;
-  border: 2px solid #ff5e5e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +25,6 @@ body, html {
 .main-video {
   width: 640px;
   height: 320px;
-  background: #ff8f84;
   border-radius: 18px;
   border: 2px solid #ff5e5e;
   display: flex;
@@ -39,3 +36,26 @@ body, html {
 .body {
   background-color: #004cff;
 }
+    .thumbnail-container img,
+    .thumbnail-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.3s ease;
+    }
+
+    .thumbnail-container video {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .thumbnail-container:hover video {
+      opacity: 1;
+    }
+
+    .thumbnail-container:hover img {
+      opacity: 0;
+    }
