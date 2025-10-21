@@ -10,40 +10,47 @@
   </head>
   <body class="background-color: #961c1c;">
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center main-bg">
-      <h1 class="text-center" style="color:#961c1c;">Rotube</h1>
-      <div class="flex-column align-items-center justify-content-center mb-4">
-        <div class="justify-content-center align-items-center">
-          <span class="main-video">Main Video</span>
+      <h1 class="text-center" style="color:#110f6e;">Seahawks Central</h1>
+      <div class="main-video-area d-flex flex-column align-items-center mb-4">
+        <div class="main-rectangle" id="playerWrapper">
+          <video id="mainVideo" width="960" height="540" controls playsinline>
+            <source src="videos/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="mt-3 d-flex gap-2" role="toolbar" aria-label="player controls">
+          <button id="playBtn" class="btn btn-success">Play</button>
+          <button id="pauseBtn" class="btn btn-success">Pause</button>
+          <button id="stopBtn" class="btn btn-success">Stop</button>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-6 d-flex justify-content-center">
-          <div class="other-videos"><div class="thumbnail-container">
-  
-    <img class="" src="img/steeler.jpg" alt="Video Thumbnail">
-    <video src="img/Cleveland Browns vs. Pittsburgh Steelers Game Highlights  2025 NFL Season Week 6 - NFL (480p, h264, youtube).mp4" muted loop autoplay playsinline></video>
-  </div></div>
-        </div>  
-        <div class="col-6 d-flex justify-content-center">
-          <div class="other-videos"><div class="thumbnail-container">
-    <img class="" src="img/steeler.jpg" alt="Video Thumbnail">
-    <video src="img/Cleveland Browns vs. Pittsburgh Steelers Game Highlights  2025 NFL Season Week 6 - NFL (480p, h264, youtube).mp4" muted loop autoplay playsinline></video>
-  </div></div>
+
+      <div class="row w-100 justify-content-center g-3 thumbnails-row">
+        <div class="col-6 col-sm-3 d-flex justify-content-center">
+          <button class="option-rectangle btn-thumbnail" data-src="vo" aria-label="Load video 1">
+            <img src="img/saints.jpg" width="240" height="135"alt="">
+          </button>
         </div>
-        <div class="col-6 d-flex justify-content-center">
-          <div class="other-videos"><div class="thumbnail-container">
-    <img class="" src="img/steeler.jpg" alt="Video Thumbnail">
-    <video src="img/Cleveland Browns vs. Pittsburgh Steelers Game Highlights  2025 NFL Season Week 6 - NFL (480p, h264, youtube).mp4" muted loop autoplay playsinline></video>
-  </div></div>
+        <div class="col-6 col-sm-3 d-flex justify-content-center">
+          <button class="option-rectangle btn-thumbnail" data-src="videos/video2.mp4" aria-label="Load video 2">
+            <img src="img/bucs.jpg" width="240" height="135"alt="">
+          </button>
         </div>
-        <div class="col-6 d-flex justify-content-center">
-          <div class="other-videos"><div class="thumbnail-container">
-    <img class="" src="img/steeler.jpg" alt="Video Thumbnail">
-    <video src="img/Cleveland Browns vs. Pittsburgh Steelers Game Highlights  2025 NFL Season Week 6 - NFL (480p, h264, youtube).mp4" muted loop autoplay playsinline></video>
-  </div></div>
+        <div class="col-6 col-sm-3 d-flex justify-content-center">
+          <button class="option-rectangle btn-thumbnail" data-src="videos/video3.mp4" aria-label="Load video 3">
+            <img src="img/49ers.jpg" width="240" height="135"alt="">
+          </button>
+        </div>
+        <div class="col-6 col-sm-3 d-flex justify-content-center">
+          <button class="option-rectangle btn-thumbnail" data-src="videos/video4.mp4" aria-label="Load video 4">
+            <img src= "img/steelers.jpg" width="240" height="135" alt="">
+          </button>
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
     
 
     
